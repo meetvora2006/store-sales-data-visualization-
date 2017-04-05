@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Designs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+
+
+.mypopularhor {
+  font: 8px sans-serif;
+}
+
+.mysaleyearreport {
+  font: 9px sans-serif;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+p {font-size: 15px;}
+h1 {font-size: 21px;}
+h2 {font-size: 18px;}
+h3 {font-size: 15px;}
+h4 {font-size: 12px;}
+
+
+ .myname{color: blue;
+ }
+
+.enrol-sub {font-weight: bold;
+ }
+
+.assignment {font-style: italic;
+}
+
+.Label{
+    margin: auto;
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.highlight {
+  fill: blue !important;
+}
+
+</style>
+         <script src="http://d3js.org/d3.v3.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+         
+       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+         
+    </head>
+    <body>
+        <h1>Info</h1>
+        <h3 class="myname">Meet Mukesh Vora</h3>
+        <h4 class="enrol-sub">#01587774</h4>
+        <h4 class="enrol-sub">Data Visualization (DSC 530/CIS 602-01) </h4>
+        <h4 class="assignment">Designs</h4>
+      
+         </br>
+         </br>
+         
+       
+         
+         
+        </br>
+        <br/>
+       
+        <div style="width: 725px; float: left">
+         <div class="Label">Product Bar Chart(Retail Sale)</div>
+        </br>
+        With this bar chart I show top 20 products which are sold the most through out the year.
+              <br>
+        this products are shown in descending order with the number of sale, so along with comparing the 
+        product sale count, we can see the order of product as well that at what position this product comes
+        in top 20.
+        </div>
+        
+         <div style="width: 600px; float: left">
+        <div class="Label">Number of Customer In Area, Bubble chart</div>
+         
+         </br>
+        With this Bubble chart I want to show the locations of customers in Ahmedabad City </br>
+        With this graph we can see that at what area of City there are more number of customers and what area there are less.
+        based on this we can make certain decision like in what area shop has to put more commercial or target customer.
+        as well it helps in making decision if shop person want to open another branch for the shop.
+        </br>
+        
+        Prof.Koop suggested me to set the opacity less for the bigger bubble that indicates that at particular area there are high 
+        volume of customers but it should not hide the other bubble under it, that's how we can get better information with making 
+        other bubble visible as well. two rectangle show the location for shop.
+        </br>
+       
+        
+         </div>
+        </br>
+        </br>
+
+         </br>
+
+         <div id="popularproduct" class="mypopular" style="float: left;"></div> <div id="MapCustomer"></div>
+         
+         </br>
+         </br>
+         </br>
+         </br>
+         
+<!--         <div class="Label">Product Bar Chart(Whole Sale)</div>
+         </br>
+         <div style="width: 800px">
+        With this bar chart I try to show what product is sold how much time. As well we can compare the 
+        sale for each product, Based on this we can get idea which product is most successful and which is less.
+        So It can help in grow business by repeating product.
+              
+        Thought this is also not clearly help to compare product sale because we have to scroll for them, 
+        I do not want to Filter products based on certain sale count because it will not help in showing
+        unsuccessful product.</div>
+        
+          <div id="popularproductwho" class="mypopular" style="float: left;"></div> 
+          
+         </br>
+         </br>
+         </br>
+         </br>-->
+         
+     
+         <div class="Label">Sale Line Chart</div>
+          </br>
+        With this line chart I try to show how the sale has been trough out the year. <br>
+        
+        this graph also support reality as in every year during the summer time in april, may, june the sale
+        decrease because the cloths for summer are not much expensive, as well summer cloths are not shop's 
+        popular product. during the july, aug sale increase at this time all shops give more discount and 
+        many scheme with the sale. During the september sale decrease because already shop's raguler customers
+        has visited the shop recently in discount and scheme time. through out october to january sale increase
+        just in between november sale decrease because the shop remain close for 7-8 days for DIWALI festival
+        
+        </br>
+         </br>
+          <div id="saleyearreport" class="mysaleyearreport"></div>
+          
+         </br>
+         </br>
+         
+      
+    </body>
+      <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="designs.js" type="text/javascript"></script>
+    
+   <!--<script src="googleAPIcode.js" type="text/javascript"></script>-->
+    
+</html>
